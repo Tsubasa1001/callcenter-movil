@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+
+
+            <TextView
+                android:id="@+id/tvTipoSolicitud"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Instalacion LTE"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.8"/>
+
+            <TextView
+                android:id="@+id/tvHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.2"
+                android:text="00:00" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvsolicitudDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Detalle" />
+    <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+        />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

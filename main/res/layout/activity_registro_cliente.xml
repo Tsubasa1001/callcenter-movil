@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroClienteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="30dp"
+        >
+
+        <TextView
+            android:id="@+id/txtView_ingreseDatosCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Ingrese sus datos"
+            android:layout_gravity="center"
+            android:textSize="16sp"/>
+
+
+    <EditText
+        android:id="@+id/editTxtNombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre"
+        android:background="@drawable/edit_border"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp"/>
+
+
+    <EditText
+        android:id="@+id/editTxtNroContrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text|number"
+        android:hint="Nro de contrato"
+        android:background="@drawable/edit_border"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/editTxtContraseñaCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:background="@drawable/edit_border"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editTxtConfirmacionContraseñaCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Confirme su contraseña"
+            android:background="@drawable/edit_border"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:textSize="16sp"/>
+
+
+        <Button
+            android:id="@+id/btn_registrarseCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="REGISTRARSE"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="473dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

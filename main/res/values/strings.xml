@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">callMovil</string>
+    <string name="msg_login">usuario y contraseña invalidos!!</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

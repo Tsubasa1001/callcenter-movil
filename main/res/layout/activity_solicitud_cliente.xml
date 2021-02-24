@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolicitudClienteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center"
+        android:paddingTop="50dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/txtViewSeleccioneTipoServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione un tipo de solicitud:"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"/>
+
+        <RadioGroup
+        android:id="@+id/radioGroupTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rBtn_intalacionLTE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instalación LTE"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/rBtn_soporteTecnico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soporte técnico"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/rBtn_instalacionTelefonia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instalación telefonía"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtView_Sugerencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalle el problema"
+            android:layout_marginTop="60dp" />
+
+        <EditText
+            android:id="@+id/editTextDetalleTexto"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_border"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <Button
+        android:id="@+id/btn_enviarSolicitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_marginTop="30dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

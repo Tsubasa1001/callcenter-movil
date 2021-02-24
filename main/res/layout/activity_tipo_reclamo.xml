@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipoReclamoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center"
+        android:paddingTop="50dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="30dp">
+
+
+        <TextView
+            android:id="@+id/textViewSeleccioneTipoReclamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione un tipo de reclamo:"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <RadioButton
+                android:id="@+id/rBtnCableado_estructural"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cableado estructural"
+                android:textSize="16sp"/>
+
+             <RadioButton
+                android:id="@+id/rBtnInstalacion_LTE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="Instalación LTE" />
+
+
+            <RadioButton
+                android:id="@+id/rBtnTelefonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Telefonía"
+                android:textSize="16sp"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/txtView_AlgunComenario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="¿Algún comentario?"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <EditText
+            android:id="@+id/editTxtSugerencias"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="352dp"
+            android:background="@drawable/edit_border"
+            />
+
+        <Button
+            android:id="@+id/btn_enviarReclamo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Enviar reclamo"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="473dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

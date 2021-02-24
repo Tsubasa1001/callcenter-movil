@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetalleItemAsignacionActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/cliente"
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="Nombre:"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nombrecliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="juan"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="0.8"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/telefonocliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telefono:"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="0.2"/>
+
+                <TextView
+                    android:id="@+id/telefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="0.8"
+                    android:text="79328454" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/materiales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Materiales"
+                    android:textStyle="bold"
+                    android:layout_weight="0.2"
+                    />
+
+                <TextView
+                    android:id="@+id/detalle_materiales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="0.8"
+                    android:text="router" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/iniciar_finalizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iniciar/Finalizar"
+                android:gravity="right"/>
+
+            <EditText
+                android:id="@+id/editxtReporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:lines="6"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_border"
+                android:layout_marginBottom="10dp"
+                />
+            <FrameLayout
+                android:id="@+id/mapa"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@android:color/black">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    />
+            </FrameLayout>
+         </LinearLayout>
+
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

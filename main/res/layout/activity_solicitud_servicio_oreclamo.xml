@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolicitudServicioOReclamoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/txtView_QueDeseaSolicitar"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué desea solicitar?"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/btn_servicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Servicio"
+            android:layout_marginTop="30dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="473dp" />
+
+        <Button
+            android:id="@+id/btn_reclamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reclamo"
+            android:layout_marginTop="30dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="473dp" />
+
+        <Button
+            android:id="@+id/btn_misServicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis servicios"
+            android:layout_marginTop="30dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="473dp" />
+
+        <Button
+            android:id="@+id/btn_misReclamos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis reclamos"
+            android:layout_marginTop="30dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="473dp" />
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
